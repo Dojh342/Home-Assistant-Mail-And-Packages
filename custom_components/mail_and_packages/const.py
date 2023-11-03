@@ -12,7 +12,7 @@ from homeassistant.helpers.entity import EntityCategory
 
 DOMAIN = "mail_and_packages"
 DOMAIN_DATA = f"{DOMAIN}_data"
-VERSION = "0.3.18"
+VERSION = "1.0"
 ISSUE_URL = "http://github.com/moralmunky/Home-Assistant-Mail-And-Packages"
 PLATFORM = "sensor"
 PLATFORMS = ["binary_sensor", "camera", "sensor"]
@@ -232,19 +232,19 @@ SENSOR_DATA = {
     },
     "fedex_packages": {},
     "fedex_tracking": {"pattern": ["\\d{12,20}"]},
-    # Canada Post
-    "capost_delivered": {
-        "email": [
-            "donotreply@canadapost.postescanada.ca",
-            "donotreply-nepasrepondre@notifications.canadapost-postescanada.ca",
-        ],
-        "subject": [
-            "Delivery Notification",
-        ],
-    },
-    "capost_delivering": {},
-    "capost_packages": {},
-    "capost_tracking": {},
+    # # Canada Post
+    # "capost_delivered": {
+    #     "email": [
+    #         "donotreply@canadapost.postescanada.ca",
+    #         "donotreply-nepasrepondre@notifications.canadapost-postescanada.ca",
+    #     ],
+    #     "subject": [
+    #         "Delivery Notification",
+    #     ],
+    # },
+    # "capost_delivering": {},
+    # "capost_packages": {},
+    # "capost_tracking": {},
     # DHL
     "dhl_delivered": {
         "email": [
